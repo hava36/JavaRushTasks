@@ -27,5 +27,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="javafx-swt" level="project" />
+    <orderEntry type="library" name="hsqldb-2.3.8-jdk6-sources" level="project" />
   </component>
 </module>
