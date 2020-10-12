@@ -1846,3 +1846,20 @@
 2020-10-01 01:29:20 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-10-01 01:30:20 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-10-01 01:31:20 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-01 22:47:37 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-10-01 22:47:37 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-10-01 22:47:37 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:37 ERROR PluginUtil.getUserPropertyFromProjectByKey(342) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2020-10-01 22:47:37 INFO  ProjectStartupHandler.setAutoscrolls(338) - Autoscrolls successfully set
+2020-10-01 22:47:37 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:37 ERROR PluginUtil.storeAutoscrollToProperties(297) - Exception while saving the value of autoscrolls to the properties file. : java.lang.NullPointerException
+2020-10-01 22:47:37 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:37 ERROR PluginUtil.getUserPropertyFromProjectByKey(342) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2020-10-01 22:47:37 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:37 ERROR PluginUtil.getUserPropertyFromProjectByKey(342) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2020-10-01 22:47:37 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(581) - The session is not set in the property file.
+2020-10-01 22:47:37 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:41 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-10-01 22:47:41 WARN  PluginUtil.isProjectStructureCorrect(370) - The project structure is invalid.
+2020-10-01 22:47:44 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.

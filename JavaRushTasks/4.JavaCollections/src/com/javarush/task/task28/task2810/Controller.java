@@ -1,8 +1,12 @@
 package com.javarush.task.task28.task2810;
 
 import com.javarush.task.task28.task2810.model.Provider;
+import com.javarush.task.task28.task2810.vo.Vacancy;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Controller {
 
@@ -20,5 +24,17 @@ public class Controller {
         return "Controller{" +
                 "providers=" + Arrays.toString(providers) +
                 '}';
+    }
+
+    public void scan() throws IOException {
+
+        List<Vacancy> allVacansies = new ArrayList<>();
+        for (Provider provider:providers
+             ) {
+            List<Vacancy> vacancyList = provider.getJavaVacancies("Voronezh");
+            allVacansies.addAll(vacancyList);
+        }
+        System.out.println(allVacansies.size());
+
     }
 }
