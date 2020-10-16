@@ -10,9 +10,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HHStrategy implements Strategy {
+public class MoikrugStrategy implements Strategy {
 
-    private static final String URL_FORMAT = "http://hh.ua/search/vacancy?text=java+%s&page=%d";
+    private static final String URL_FORMAT = "https://moikrug.ru/vacancies?q=java+%s&page=%d";
+
 
     @Override
     public List<Vacancy> getVacancies(String searchString) {
@@ -23,29 +24,25 @@ public class HHStrategy implements Strategy {
         try {
             do {
                 Document document = getDocument(searchString, page);
-
-                Elements elements = document.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy");
-                if (elements.isEmpty()) break;
-
-                for (Element element: elements
-                ) {
-                    Elements links = element.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy-title");
-                    Elements salary = element.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy-compensation");
-                    Elements location = element.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy-address");
-                    Elements company = element.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy-employer");
+                Elements vacanciesHtmlList = document.getElementsByClass("job");
+                if (vacanciesHtmlList.isEmpty()) break;
+                for (Element element : vacanciesHtmlList) {
+                    Elements title = element.getElementsByClass("title");
+                    Elements links = title.get(0).getElementsByTag("a");
+                    Elements locations = element.getElementsByClass("location");
+                    Elements companyName = element.getElementsByClass("company_name");
+                    Elements salary = element.getElementsByClass("count");
 
                     Vacancy vacancy = new Vacancy();
-                    vacancy.setCompanyName(company.get(0).text());
-                    vacancy.setCity(location.get(0).text());
+                    vacancy.setSiteName("moikrug.ru");
                     vacancy.setTitle(links.get(0).text());
-                    vacancy.setSiteName("hh.ua");
-                    vacancy.setUrl(links.get(0).attr("href"));
+                    vacancy.setUrl("https://moikrug.ru" + links.get(0).attr("href"));
+                    vacancy.setCity(locations.size() > 0 ? locations.get(0).text() : "");
+                    vacancy.setCompanyName(companyName.get(0).text());
                     vacancy.setSalary(salary.size() > 0 ? salary.get(0).text() : "");
                     list.add(vacancy);
                 }
-
                 page++;
-
             } while (true);
 
         } catch (IOException e) {
@@ -62,13 +59,12 @@ public class HHStrategy implements Strategy {
         try {
             document = Jsoup.connect(String.format(URL_FORMAT, searchString, page))
                     .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 YaBrowser/20.9.0.933 Yowser/2.5 Safari/537.36")
-                    .referrer("http://hh.ru/").get();
+                    .referrer("http://moikrug.ru").get();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
         return document;
     }
-
 
 }
