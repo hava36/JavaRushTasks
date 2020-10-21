@@ -20,7 +20,11 @@ public class Solution {
     }
 
     public static boolean isWeightEven(long number) {
-        return false;
+        String binaryString = Long.toBinaryString(number);
+        int count = 0;
+        for (int index = 0; index < binaryString.length(); index++) {
+            if (binaryString.charAt(index) == '1') count++;
+        }
+        return count % 2 == 0;
     }
-    
 }
