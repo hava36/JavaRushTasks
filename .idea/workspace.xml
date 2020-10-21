@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d560c2be-9e57-427f-96ed-852d7f1db91d" name="Default Changelist" comment="" />
+    <list default="true" id="d560c2be-9e57-427f-96ed-852d7f1db91d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/JavaRushTasks/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushTasks/out.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,9 +39,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1603281092494">
+    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1603290075382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603281092494" />
+    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603290075382" />
   </component>
 </project>

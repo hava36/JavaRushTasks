@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.jsoup:jsoup:1.13.1" level="project" />
+    <orderEntry type="library" name="junit:junit:4.13" level="project" />
+    <orderEntry type="library" name="com.google.collections:google-collections:1.0" level="project" />
+    <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="project" />
   </component>
 </module>
