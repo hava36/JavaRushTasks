@@ -23242,3 +23242,41 @@ java.net.UnknownHostException: javarush.ru
 2020-10-21 03:10:43 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
 
 2020-10-21 03:10:43 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-10-21 14:51:07 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-10-21 14:51:07 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-10-21 14:51:07 INFO  ProjectStartupHandler.setAutoscrolls(338) - Autoscrolls successfully set
+2020-10-21 14:51:07 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-10-21 14:51:07 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-10-21 14:51:07 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-10-21 14:51:07 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-10-21 14:51:07 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-10-21 14:51:15 INFO  ProjectStartupHandler.projectClosing(154) - ---------- Project closed ----------
+
+2020-10-21 14:51:15 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2020-10-21 14:51:36 INFO  ProjectStartupHandler.runActivity(73) - ---------- Project opened ----------
+2020-10-21 14:51:36 INFO  ProjectStartupHandler.runActivity(74) - ---------- Version 3.43 ----------
+
+2020-10-21 14:51:36 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-10-21 14:51:36 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-10-21 14:51:36 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-10-21 14:51:36 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-10-21 14:51:36 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-10-21 14:51:40 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2020-10-21 14:51:42 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2020-10-21 14:51:54 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2020-10-21 14:51:56 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2020-10-21 14:52:24 INFO  ApacheHttpClient.getTaskTemplateInfo(350) - responseCode = 200
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(73) - File created :D:/Программирование/Git/Repositories/JavaRush/JavaRushTasks/4.JavaCollections/src/com/javarush/task/task39/task3904
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(515) - checkpoint 1
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(517) - checkpoint 2
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(523) - checkpoint 3
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(515) - checkpoint 1
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(517) - checkpoint 2
+2020-10-21 14:52:24 INFO  TaskInfoSelectorMouseListener.run(523) - checkpoint 3
+2020-10-21 14:52:36 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-21 14:53:37 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-21 14:54:36 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-21 14:55:36 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-21 14:56:36 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2020-10-21 14:57:36 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
