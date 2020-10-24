@@ -11,5 +11,6 @@
     <orderEntry type="library" name="junit:junit:4.13" level="project" />
     <orderEntry type="library" name="com.google.collections:google-collections:1.0" level="project" />
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.5.10" level="project" />
   </component>
 </module>
